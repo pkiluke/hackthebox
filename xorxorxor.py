@@ -2,7 +2,7 @@ input_b = bytes.fromhex("134af6e1297bc4a96f6a87fe046684e8047084ee046d84c5282dd7e
 flag_format = str.encode('HTB{')
 
 # key = ''.join([chr(flag_format[i] ^ input_b[i]) for i in range(0, 4)])
-key = [flag_format[i] ^ input_b[i] for i in range(0, 4)]
+key = [flag_format[i] ^ input_b[i] for i in range(len(flag_format))]
 
 
 def decrypt(data: bytes) -> bytes:
