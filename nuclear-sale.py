@@ -7,9 +7,6 @@ input2_b = bytes.fromhex("fd034c32294bfa6ab44a28892e75c4f24d8e71b41cfb9a81a634b9
 # encrypt2
 input3_b = bytes.fromhex("de328f76159108f7653a5883decb8dec06b0fd9bc8d0dd7dade1f04836b8a07da20bfe70")
 
-# for a, b in enumerate(input2_b):
-#     print(a, b)
-
 flag = b''
 
 for i in range(len(input1_b)):
