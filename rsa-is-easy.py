@@ -1,4 +1,4 @@
-# The aim of the challenge is to exploit the incorrectly generated RSA moduli that are using duplicate prime (Q)
+# The aim of the challenge is to exploit the incorrectly generated RSA moduli that are using a duplicate prime (Q)
 # See duplicate primes - https://www.johndcook.com/blog/2019/02/11/rsa-duplication-flaws/
 # n1 = p * q
 # n2 = q * z
