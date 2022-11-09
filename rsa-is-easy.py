@@ -1,8 +1,9 @@
 # The aim of the challenge is to exploit the incorrectly generated RSA moduli that are using a duplicate prime (Q)
 # See duplicate primes - https://www.johndcook.com/blog/2019/02/11/rsa-duplication-flaws/
+# https://www.johndcook.com/blog/2018/12/19/rsa-with-one-known-prime/
+# https://stackoverflow.com/questions/50951115/how-can-i-set-the-precision-of-a-number-to-have-10-decimal-digits-using-the-pyth
 # n1 = p * q
 # n2 = q * z
-
 
 import gmpy2
 
@@ -46,3 +47,10 @@ print(d1)
 print(d2)
 
 print(d1[::-1] + d2[::-1])
+
+print(n1.bit_length())
+print(n2.bit_length())
+
+print(q_calculated.bit_length())
+print(p_calculated.bit_length())
+print(z_calculated.bit_length())
